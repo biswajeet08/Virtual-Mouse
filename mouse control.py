@@ -6,17 +6,17 @@ from pynput.mouse import Button, Controller
 
 
 class VirtualMouse():
-    def __init__(self, cam_no=0, wCam=1080, hCam=720):
+    def __init__(self, cam_no=0, wCam=1080, hCam=720, fingers=[4, 8, 12], frameR1=200, frameR2=100, smoothening=7):
         self.cam_no = cam_no
         self.wCam, self.hCam = wCam, hCam
-        self.frameR1, self.frameR2 = 200, 100
-        self.smoothening = 7
+        self.frameR1, self.frameR2 = frameR1, frameR2
+        self.smoothening = smoothening
         self.plocX, self.plocY, self.clocX, self.clocY = 0, 0, 0, 0
         self.detector = HandDetector(trackCon=0.6, maxHands=1)
         self.wScreen, self.hScreen = autopy.screen.size()
         self.mouse = Controller()
         self.fingers_dict = {4: 0, 8: 1, 12: 2, 16: 3, 20: 4}
-        self.fingers = [4, 8, 12]
+        self.fingers = fingers
 
     def mouse_control(self):
         cap = cv2.VideoCapture(self.cam_no)
