@@ -1,7 +1,16 @@
+absl-py==0.13.0
 appdirs==1.4.4
+attrs==21.2.0
+autopy==4.0.0
 distlib==0.3.2
 filelock==3.0.12
 importlib-metadata==4.5.0
+mediapipe==0.8.5
+numpy==1.21.0
+opencv-contrib-python==4.5.2.54
+opencv-python==4.5.2.54
+protobuf==3.17.3
+pynput==1.7.3
 six==1.16.0
 typing-extensions==3.10.0.0
 virtualenv==20.4.7
