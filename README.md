@@ -1,4 +1,4 @@
-Don't want to egt from your comfortable chair and grab the mouse button to click???
+Don't want to get from your comfortable chair and grab the mouse button to click???
 
 Well here is Virtual-Mouse - A fully virtually controlled by your hand fingers mouse. Just run the mousecontrol.py and place your hand infront of the opened camera.
 
